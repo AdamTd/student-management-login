@@ -1,8 +1,10 @@
+/* Reset default margin and padding */
 body {
   margin: 0;
   padding: 0;
 }
 
+/* Styling for the header section with background image */
 .intro {
   background-image: url("images/bac.jpg");
   background-repeat: no-repeat;
@@ -58,8 +60,37 @@ body {
   overflow-wrap: break-word;
 }
 
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+  .top-intro {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .login-intro {
+    max-width: 100%;
+    margin: 10px 0;
+  }
 
+  .amu-intro,
+  .login-intro {
+    max-width: 100%;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .amu-intro,
+  .login-intro {
+    padding: 0 10px;
+  }
+
+  .amu-intro p {
+    font-size: 14px;
+  }
+}
+
+/* Styling for the login section */
 .login-intro {
   height: 368.2px;
   width: 500px;
@@ -121,6 +152,7 @@ form {
   height: 34.3px;
   font-size: 14px;
 }
+
 .text2 {
   background: #ecf0f8;
   flex: 1;
@@ -134,6 +166,7 @@ form {
   margin-bottom: 25px;
 }
 
+/* Styling for the primary button (login) */
 .btn {
   width: 66.93px;
   height: 33px;
@@ -143,15 +176,19 @@ form {
   border-radius: 3px;
   padding: 10px 20px 11px;
 }
+
+/* Hover effect for the primary button */
 .btn:hover {
   transition: 300ms;
   background-color: #005d7c;
 }
 
+/* Remove default link decoration */
 a {
   text-decoration: none;
 }
 
+/* Styling for the secondary button (forgot password) */
 .btn-2 {
   width: 126.26px;
   height: 33px;
@@ -161,11 +198,14 @@ a {
   border-radius: 3px;
   padding: 10px 20px 11px;
 }
+
+/* Hover effect for the secondary button */
 .btn-2:hover {
   transition: 300ms;
   background-color: #a6a6a6;
 }
 
+/* Styling for the menu section using grid layout */
 .menu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -203,7 +243,25 @@ a {
   text-decoration: none;
 }
 
+/* Adjust menu layout for tablets */
+@media (max-width: 768px) {
+  .menu {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 10px;
+  }
+}
 
+/* Adjust menu layout for mobile devices */
+@media (max-width: 480px) {
+  .menu {
+    grid-template-columns: 1fr;
+    padding: 5px;
+  }
+
+  .menu-item {
+    padding: 10px;
+  }
+}
 
 .fa.fa-calendar,
 .fa.fa-commenting,
@@ -227,6 +285,8 @@ a {
 .fa.fa-cloud {
   color: rgb(255, 136, 0);
 }
+
+/* Styling for user circle icon and hover effects for other icons */
 .fa.fa-user-circle,
 .fa.fa-calendar:hover,
 .fa.fa-commenting:hover,
@@ -244,6 +304,7 @@ h6.text-menu {
   margin: 3.2px 0 8px;
 }
 
+/* Styling for the footer */
 footer {
   position: fixed;
   bottom: 0;
