@@ -4,10 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arba Minch University Registrar Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="intro">
+      <div class="top-intro">
+        <div class="amu-intro">
+          <img src="images/amulogo.png" alt="Arba Minch University Logo" />
+          <h1>AMU | Office of the University Registrar</h1>
+          <hr />
+          <p>
+            This is our registrar portal for students, academic staffs and
+            alumni to access different registrar services offered by the office
+            of the university registrar.
+          </p>
+        </div>
 
+        <div class="login-intro">
+          <div class="login-form">
+            <h4>Login To SMiS</h4>
+            <hr />
+            <br />
+            <form>
+              <div class="form-container">
+                <div class="form-group">
+                  <span class="form-icon">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </span>
+                  <input
+                    class="text1"
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <span class="form-icon">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                  </span>
+                  <input
+                    class="text2"
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <button class="btn" type="submit">Login</button>
+              </div>
+              <div>
+                <a class="btn-2" href="#">Forgot Password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="content">
